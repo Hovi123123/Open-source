@@ -31,7 +31,7 @@ Source Code of 《Multi-modal data fusion for supervised learning-based identifi
 > ├─data&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# The origin dataset</br>
 > ├─results&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Stored the results of the experiment 1-15</br>
 > │   └─&nbsp;ML_results&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#  experiment 1-7</br>
-> │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DL_results.xlsx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#  experiment 8-15</br>
+> │&nbsp;&nbsp;&nbsp;&nbsp;DL_results.xlsx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#  experiment 8-15</br>
 > │      </br>
 > └─src&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Stored the main codes</br>
 >     ├─DL-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   #  The source code for experiment 14 corresponding to PartB in the figure. 
