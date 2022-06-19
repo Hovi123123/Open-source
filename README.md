@@ -29,29 +29,16 @@ Source Code of 《Multi-modal data fusion for supervised learning-based identifi
 > │  README.md </br>
 > │  requirements.txt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Recommended Environment </br>
 > │  </br>
-> ├─best_model&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Store the trained model</br>
-> │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;best_model.pt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# The trained model</br>
-> │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;events.out.tfevents.1640322372.Hovi-laptop.40112.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#Support for using TensorBoard to visualize the training process</br>
-> │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameters.txt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Parameters of the trained model</br>
-> │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result.txt			 </br>
+> ├─data&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# The origin dataset</br>
 > │      </br>
-> ├─predict&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Stored prediction example data</br>
-> │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pre_labels.csv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#  Predicted results</br>
-> │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TCM_inhouse_tumor.xlsx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Data used for prediction</br>
+> ├─results&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Stored the results of the experiment 1-15</br>
+> │   └─&nbsp;ML_results&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#  experiment 1-7</br>
+> │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DL_results.xlsx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#  experiment 8-15</br>
 > │      </br>
 > └─src&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Stored the main codes</br>
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataset.py</br>
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_cleaned.xlsx</br>
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;main.py</br>
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;model.py</br>
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new_pre.ipynb&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Prediction</br>
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│  </br>
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─logs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # Training log, same content as 'best_model'</br>
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─traning_logs_31592</br>
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;best_model.pt</br>
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;events.out.tfevents.1640322372.Hovi-laptop.40112.0</br>
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameters.txt</br>
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result.txt</br>
+>     ├─DL-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#  The source code for experiment 14 corresponding to PartB in the figure. Experiment 8-13 only required modification of the input data.
+>     ├─DL-2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#  The source code of Experiment 15 corresponding to PartC in the figure.
+>     └─ML&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#  The source code of experiments 1-7 corresponding to PartA in the figure.
 
  
 
