@@ -28,9 +28,7 @@ Source Code of 《Multi-modal data fusion for supervised learning-based identifi
 > │  LICENSE </br>
 > │  README.md </br>
 > │  requirements.txt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Recommended Environment </br>
-> │  </br>
 > ├─data&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# The origin dataset</br>
-> │      </br>
 > ├─results&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Stored the results of the experiment 1-15</br>
 > │   └─&nbsp;ML_results&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#  experiment 1-7</br>
 > │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DL_results.xlsx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#  experiment 8-15</br>
