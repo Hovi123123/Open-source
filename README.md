@@ -1,9 +1,8 @@
-# DeepMIF
-Source Code of 《DeepMIF：a deep learning based multimodal information fusion method for small molecule activity classes prediction》
+Source Code of 《Multi-modal data fusion for supervised learning-based identification of USP7 inhibitors: a systematic comparison》
 
 ---
 
-### 1. Overall architecure of DeepMIF:
+### 1. Overall architecure
 
 ![Image text](https://raw.githubusercontent.com/Hovi123123/DeepMIF/master/DeepMIF_model.jpg?token=GHSAT0AAAAAABSZT3ISBFJEJYKGZIPNLRXKYR4RHOA)
 
