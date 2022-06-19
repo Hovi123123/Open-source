@@ -34,9 +34,9 @@ Source Code of 《Multi-modal data fusion for supervised learning-based identifi
 > │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DL_results.xlsx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#  experiment 8-15</br>
 > └─src&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Stored the main codes</br>
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─DL-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   #  The source code for experiment 14 corresponding to PartB in the figure. </br>
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#  Experiment 8-13 only needs to change the inputs.</br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#  Experiment 8-13 only needs to change the inputs.</br>
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─DL-2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   #  The source code of Experiment 15 corresponding to PartC in the figure.</br>
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ML&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     #  The source code of experiments 1-7 corresponding to PartA in the figure.</br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ML&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     #  The source code of experiments 1-7 corresponding to PartA in the figure.</br>
 
  
 
