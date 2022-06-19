@@ -4,7 +4,7 @@ Source Code of 《Multi-modal data fusion for supervised learning-based identifi
 
 ### 1. Overall architecure
 
-![Image text](https://raw.githubusercontent.com/Hovi123123/DeepMIF/master/DeepMIF_model.jpg?token=GHSAT0AAAAAABSZT3ISBFJEJYKGZIPNLRXKYR4RHOA)
+![models.jpg](https://s2.loli.net/2022/06/19/m5AThJk9MV87uqx.jpg)
 
 
 
