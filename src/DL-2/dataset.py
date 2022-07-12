@@ -64,19 +64,15 @@ class MyDataset(Dataset):
         X_train,X_dev, y_train, y_dev =train_test_split(new_train_data[531:,:],activity_list[531:],test_size=0.06,
                                                           random_state=8888,stratify=activity_list[531:],shuffle=True)
 
-        #处理阶段信息
         if phase == 'training':
             self.activity_list = y_train
             self.smi_list = X_train[:,0]
             self.length = X_train.shape[0]
 
-
-
         elif phase == 'validation':
             self.activity_list = y_dev
             self.smi_list = X_dev[:,0]
             self.length = X_dev.shape[0]
-
 
         elif phase == 'test':
             self.activity_list = y_test
