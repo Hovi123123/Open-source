@@ -89,16 +89,10 @@ class MyDataset(Dataset):
 
 
     def __getitem__(self, idx):
-         #获取活性值
+
         activity_value = self.activity_list[idx]
-
-        #处理描述符
         single_dp = self.dp_value[idx]
-
-        #处理MACCS
         single_maccs = self.macc_values[idx]
-
-        #处理ecfp4
         single_ecfp4 = self.ecfp4_values[idx]
 
 
