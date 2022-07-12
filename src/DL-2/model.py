@@ -25,7 +25,7 @@ class LSTM_Attention(nn.Module):
 
         self.embedding = nn.Embedding(vocab_size,embedding_dim,padding_idx=0)
 
-        self.rnn = nn.LSTM(input_size = embedding_dim,hidden_size = hidden_dim,num_layers = n_layers,batch_first=True)#！！！！检查是否需要, batch_first=True
+        self.rnn = nn.LSTM(input_size = embedding_dim,hidden_size = hidden_dim,num_layers = n_layers,batch_first=True)
 
         self.fc = nn.Linear(hidden_dim,1)
 
@@ -78,14 +78,10 @@ def test(flag, model: nn.Module, test_loader, loss_function, device, show):
             y_hat_temp = y_hat
             test_loss += loss_function(y_hat_temp.view(-1), y.view(-1).float()).item()
             outputs.append(y_hat.cpu().numpy().reshape(-1))
-            # outputs.append(y_hat.cpu().numpy())
             targets.append(y.cpu().numpy().reshape(-1))
 
-    # print("---outputs0:",outputs)
     targets = np.concatenate(targets).reshape(-1)
-    outputs = np.concatenate(outputs).reshape(-1)   # print("---outputs0:",outputs)
-    # outputs = np.concatenate(outputs)   # print("---outputs1:",outputs)
-    # outputs =  np.argmax(outputs, axis=1)   # print("---outputs2:",outputs)
+    outputs = np.concatenate(outputs).reshape(-1)
     b = torch.sigmoid(torch.tensor(outputs))
     pre_label = []
     for i in b:
