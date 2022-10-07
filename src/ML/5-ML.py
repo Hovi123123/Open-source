@@ -82,7 +82,6 @@ def main(model,train_x,train_y,test_x,test_y,sheet_name,excel_writer):
     acc_list = []
     f1_list = []
     auc_list = []
-    mcc_list = []
     best_para  = []
     for seed in seed_list:
         print(seed)
