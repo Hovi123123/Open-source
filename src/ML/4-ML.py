@@ -82,7 +82,6 @@ def main(model,train_x,train_y,test_x,test_y,sheet_name,excel_writer):
     acc_list = []
     f1_list = []
     auc_list = []
-    mcc_list = []
     best_para  = []
     for seed in seed_list:
         print(seed)
@@ -165,13 +164,12 @@ def main(model,train_x,train_y,test_x,test_y,sheet_name,excel_writer):
         best_model = gs.best_estimator_
         y_pred = best_model.predict(test_x)
         y_score = best_model.predict_proba(test_x)
-        acc, f1, mcc, auc1 = bi_model_evaluation(test_y, y_pred, y_score)
+        acc, f1, auc1 = bi_model_evaluation(test_y, y_pred, y_score)
 
         best_para.append(best_model.get_params())
         acc_list.append(acc)
         f1_list.append(f1)
         auc_list.append(auc1)
-        mcc_list.append(mcc)
         print(model)
 
     acc_np = np.array(acc_list).reshape((30,1))
