@@ -60,12 +60,12 @@ def get_data(data_path):
     
     return train_x,train_y,test_x,test_y
 
-def bi_model_evaluation(y_true, y_pred):
+def bi_model_evaluation(y_true, y_pred, y_score):
 
     acc = accuracy_score(y_true, y_pred)
     f1 = f1_score(y_true, y_pred)
     mcc = matthews_corrcoef(y_true, y_pred)
-    fpr, tpr, thresholds_keras = roc_curve(y_true, y_pred)
+    fpr, tpr, thresholds_keras = roc_curve(y_true, y_score)
     auc1 = auc(fpr, tpr)
 
     return acc,f1,mcc,auc1
@@ -160,7 +160,8 @@ def main(model,train_x,train_y,test_x,test_y,sheet_name,excel_writer):
         gs.fit(train_x,train_y)
         best_model = gs.best_estimator_
         y_pred = best_model.predict(test_x)
-        acc, f1, mcc, auc1 = bi_model_evaluation(test_y, y_pred)
+        y_score = best_model.predict_proba(test_x)
+        acc, f1, mcc, auc1 = bi_model_evaluation(test_y, y_pred, y_score)
 
         best_para.append(best_model.get_params())
         acc_list.append(acc)
