@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import matthews_corrcoef, accuracy_score
+from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 from sklearn.decomposition import PCA
@@ -68,15 +68,14 @@ def get_data(data_path):
     
     return train_x,train_y,test_x,test_y
 
-def bi_model_evaluation(y_true, y_pred):
+def bi_model_evaluation(y_true, y_pred, y_score):
 
     acc = accuracy_score(y_true, y_pred)
     f1 = f1_score(y_true, y_pred)
-    mcc = matthews_corrcoef(y_true, y_pred)
-    fpr, tpr, thresholds_keras = roc_curve(y_true, y_pred)
+    fpr, tpr, thresholds_keras = roc_curve(y_true, y_score)
     auc1 = auc(fpr, tpr)
 
-    return acc,f1,mcc,auc1
+    return acc,f1,auc1
 
 def main(model,train_x,train_y,test_x,test_y,sheet_name,excel_writer):
     seed_list = [32416,31764,31861,32342,32486,32249,32313,31691,
@@ -168,24 +167,23 @@ def main(model,train_x,train_y,test_x,test_y,sheet_name,excel_writer):
         gs.fit(train_x,train_y)
         best_model = gs.best_estimator_
         y_pred = best_model.predict(test_x)
-        acc, f1, mcc, auc1 = bi_model_evaluation(test_y, y_pred)
+        y_score = best_model.predict_proba(test_x)
+        acc, f1, auc1 = bi_model_evaluation(test_y, y_pred, y_score)
 
         best_para.append(best_model.get_params())
         acc_list.append(acc)
         f1_list.append(f1)
         auc_list.append(auc1)
-        mcc_list.append(mcc)
         print(model)
 
     acc_np = np.array(acc_list).reshape((30,1))
     f1_np = np.array(f1_list).reshape((30,1))
     auc_np = np.array(auc_list).reshape((30,1))
-    mcc_np = np.array(mcc_list).reshape((30,1))
     seed_np = np.array(seed_list).reshape((30,1))
     best_para_np = np.array(best_para).reshape((30,1))
-    com_vec = np.concatenate((seed_np,acc_np,f1_np,auc_np,mcc_np,best_para_np),1)
+    com_vec = np.concatenate((seed_np,acc_np,f1_np,auc_np,best_para_np),1)
     com_pd = pd.DataFrame(com_vec)
-    com_pd.columns = ['Seed', 'ACC', 'F1', 'AUC', 'MCC', 'Best_model']
+    com_pd.columns = ['Seed', 'ACC', 'F1', 'AUC', 'Best_model']
     com_pd.to_excel(excel_writer, index=False, sheet_name=str(model))
 
 
