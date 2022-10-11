@@ -159,7 +159,7 @@ def main(model,train_x,train_y,test_x,test_y,sheet_name,excel_writer):
         best_model = gs.best_estimator_
         y_pred = best_model.predict(test_x)
         y_score = best_model.predict_proba(test_x)
-        acc, f1, auc1 = bi_model_evaluation(test_y, y_pred, y_score)
+        acc, f1, auc1 = bi_model_evaluation(test_y, y_pred, y_score[:,1])
 
         best_para.append(best_model.get_params())
         acc_list.append(acc)
