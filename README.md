@@ -38,7 +38,7 @@ Source Code of 《Multi-modal data fusion for supervised learning-based identifi
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─DL-2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   #  The source code of Experiment 15 corresponding to PartC in the figure.</br>
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ML&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     #  The source code of experiment 7 corresponding to PartA in the figure.</br>
 >  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#  Experiment 1-6 only needs to change the inputs.</br>
-
+* The recommended hyperparameters for each ML or DL models are available in the paper.
  
 
 ### 4. Contact:
