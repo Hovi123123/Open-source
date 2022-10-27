@@ -31,7 +31,7 @@ Source Code of 《Multi-modal data fusion for supervised learning-based identifi
 > ├─data&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Include the USP7 dataset, decoy dataset and SMILES enumeration dataset</br>
 > ├─results&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Stored the results of all experiments</br>
 > └─src&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Stored the main codes (cutoff values = 0.5,1,10, SMOTE, decoy selection, SMILES enumeration)</br>
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─DL-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   #  The source code for experiment 14 in Group F-J. </br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─DL-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   #  The source code of experiment 14 in Group F-J. </br>
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#  Experiment 8-13 only needs to change the inputs.</br>
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─DL-2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   #  The source code of Experiment 15 in Group K-O.</br>
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ML&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     #  The source code of experiment 7 in Group A-E.</br>
