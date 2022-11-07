@@ -97,8 +97,6 @@ def test(flag, model: nn.Module, test_loader, loss_function, device, show):
     evaluation = {
         'loss': test_loss,
         'ACC': metrics.get_ACC(targets, outputs),
-        'Precision': metrics.get_Precision(targets, outputs),
-        'Recall': metrics.get_Recall(targets, outputs),
         'get_F1': metrics.get_F1(targets, outputs),
         'AUROC': metrics.get_ROC(targets, np.array(b)),
     }

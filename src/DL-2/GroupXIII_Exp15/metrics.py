@@ -8,13 +8,6 @@ from sklearn.metrics import auc
 def get_ACC(y_true, y_pred):
     return accuracy_score(y_true, y_pred)
 
-
-def get_Precision(y_true, y_pred):
-    return precision_score(y_true, y_pred)
-
-def get_Recall(y_true, y_pred):
-    return recall_score(y_true, y_pred)
-
 def get_F1(y_true, y_pred):
     return f1_score(y_true, y_pred)
 
