@@ -52,10 +52,10 @@ def get_data(data_path):
     dp0 = getStandardScaler(train_data[:,0:194])
     dp1 = getPCA(dp0,128)
     #MACCS
-    macc0 = np.array(train_data[:,194:361],dtype=np.int)
+    macc0 = getStandardScaler(np.array(train_data[:,194:361],dtype=np.int))
     macc1 = getPCA(macc0,128)
     #ecfp4
-    ecfp0 = np.array(train_data[:,361:2409],dtype=np.int)
+    ecfp0 = getStandardScaler(np.array(train_data[:,361:2409],dtype=np.int))
     ecfp1 = getPCA(ecfp0,128)
 
     new_train_data = np.concatenate((dp1,macc1,ecfp1),axis=1)
