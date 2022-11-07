@@ -166,6 +166,7 @@ def main(model,train_x,train_y,test_x,test_y):
         print("ACC:",acc)
         print("F1:",f1)
         print("AUC:",auc1)
+        # print("Params:",best_model.get_params())
 
 
 if __name__ == "__main__":
