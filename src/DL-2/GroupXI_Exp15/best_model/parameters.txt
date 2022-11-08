@@ -1,0 +1,15 @@
+device=cuda:0
+seed=32486
+write to logs/logs_20221008191924_32486
+max_smi_len=195
+model: 
+LSTM_Attention(
+  (W_Q): Linear(in_features=128, out_features=128, bias=False)
+  (W_K): Linear(in_features=128, out_features=128, bias=False)
+  (W_V): Linear(in_features=128, out_features=128, bias=False)
+  (embedding): Embedding(64, 100, padding_idx=0)
+  (rnn): LSTM(100, 128, num_layers=4, batch_first=True)
+  (fc): Linear(in_features=128, out_features=1, bias=True)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (layernorm): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+)
