@@ -36,7 +36,7 @@ Source Code of 《Multi-modal data fusion for supervised learning-based identifi
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─DL-2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   #  The source code of Experiment 15 in Group XI-XV.</br>
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ML&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     #  The source code of experiment 7 in Group I-V.</br>
 >  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#  Experiment 1-6 only needs to change the inputs.</br>
-* The recommended hyperparameters for each ML or DL models are available in the paper.
+* The recommended hyperparameters for each ML or DL models are available in the paper`s Additional file 1.
  
 
 ### 4. Contact:
