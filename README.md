@@ -29,7 +29,7 @@ Source Code of 《Multi-modal data fusion for supervised learning-based identifi
 > │  README.md </br>
 > │  requirements.txt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Recommended Environment </br>
 > ├─data&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Include the USP7 dataset, decoy dataset and SMILES enumeration dataset</br>
-> ├─results&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Stored the results of all experiments and Tables in Additional file 1</br>
+> ├─results&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Stored the results of all experiments, and Tables in Additional file 1</br>
 > └─src&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Stored the main codes (cutoff values = 0.5,1,10, SMOTE, decoy selection, SMILES enumeration)</br>
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─DL-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   #  The source code of experiment 14 in Group VI-X. </br>
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#  Experiment 8-13 only needs to change the inputs.</br>
