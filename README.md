@@ -37,7 +37,7 @@ Source Code of 《Multi-modal data fusion for supervised learning-based identifi
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ML&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     #  The source code of experiment 7 in Group I-V.</br>
 >  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#  Experiment 1-6 only needs to change the inputs.</br>
 * The recommended hyperparameters for each ML or DL models are available in the paper`s Additional file 1.
-* We provide the best model and prediction script of Exp15 in Group XI and Exp14 in Group VI. If you need the prediction script of other experiments, you can simply replace and modify it.
+* We provide the best models and prediction scripts of Exp15 in Group XI and Exp14 in Group VI. If you need the prediction script of other experiments, you can simply replace and modify it.
  
 
 ### 4. Contact:
