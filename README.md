@@ -9,7 +9,7 @@ Source Code of 《Multi-modal data fusion for supervised learning-based identifi
 
 ### 2. Requirements:
 
-- Python >= 3.6
+- Python >= 3.8
 
 - numpy
 
