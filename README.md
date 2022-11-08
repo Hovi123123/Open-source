@@ -4,7 +4,7 @@ Source Code of 《Multi-modal data fusion for supervised learning-based identifi
 
 ### 1. Overall architecure
 
-![New_model.jpg](https://s2.loli.net/2022/10/25/Wqotbc93dfE8KMB.jpg)
+![New_model.jpg](https://s2.loli.net/2022/11/08/wKaVrO1D8AtN5Ub.jpg)
 
 
 ### 2. Requirements:
