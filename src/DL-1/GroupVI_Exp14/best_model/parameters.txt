@@ -1,0 +1,15 @@
+device=cuda:0
+seed=31861
+
+model: 
+LSTM_Attention(
+  (W_Q2): Linear(in_features=32, out_features=32, bias=False)
+  (W_K2): Linear(in_features=32, out_features=32, bias=False)
+  (W_V2): Linear(in_features=32, out_features=32, bias=False)
+  (fc): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (layernorm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+  (dpfc): Linear(in_features=194, out_features=32, bias=True)
+  (maccsfc): Linear(in_features=167, out_features=32, bias=True)
+  (ecfp4fc): Linear(in_features=2048, out_features=32, bias=True)
+)

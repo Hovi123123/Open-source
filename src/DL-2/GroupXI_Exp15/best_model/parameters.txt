@@ -1,6 +1,5 @@
 device=cuda:0
 seed=32486
-write to logs/logs_20221008191924_32486
 max_smi_len=195
 model: 
 LSTM_Attention(
