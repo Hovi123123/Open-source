@@ -10,7 +10,6 @@ from dataset import CHAR_SMI_SET_LEN
 from sklearn.metrics import roc_curve, precision_recall_curve, auc
 
 vocab_size = CHAR_SMI_SET_LEN
-embedding_size = 110
 hidden_dim = 128
 num_class = 2
 device = torch.device("cuda:0")
@@ -45,15 +44,12 @@ class LSTM_Attention(nn.Module):
 
 
     def forward(self, input_ids, input_lengths):
-        embedding = self.dropout(self.embedding(input_ids))    #embedding.shape = [batch_size,smi_len,embedding_dim = 100]
-        embedding_data = pack_padded_sequence(input=embedding ,lengths=input_lengths, batch_first=True, enforce_sorted=False)
-        output,(h_n,c) = self.rnn(embedding_data)           #out.shape = [batch_size,smi_len,hidden_dim=128]
-        total_length = embedding.size(1)
-        out_pad, out_len = pad_packed_sequence(sequence=output, batch_first=True,total_length=total_length,padding_value=0)
+        embedding = self.dropout(self.embedding(input_ids))  
+        output_rnn,(h_n,c) = self.rnn(embedding)  
 
-        Q = self.W_Q(out_pad)        # [batch_size,smi_len,hidden_dim]
-        K = self.W_K(out_pad)
-        V = self.W_V(out_pad)
+        Q = self.W_Q(output_rnn)       
+        K = self.W_K(output_rnn)
+        V = self.W_V(output_rnn)
 
         attn_output,alpha_n = self.attention(Q, K, V)
         out_ln = self.layernorm(attn_output)

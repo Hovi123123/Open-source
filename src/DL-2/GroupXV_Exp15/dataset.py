@@ -2,8 +2,6 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 from torch.utils.data import Dataset
-from sklearn.preprocessing import StandardScaler
-from sklearn.decomposition import PCA
 from sklearn.model_selection import train_test_split
 
 CHAR_SMI_SET = {"(": 1, ".": 2, "0": 3, "2": 4, "4": 5, "6": 6, "8": 7, "@": 8,
@@ -22,18 +20,6 @@ def label_smiles(line, max_smi_len):
     for i, ch in enumerate(line[:max_smi_len]):
         X[i] = CHAR_SMI_SET[ch]
     return X
-
-def getStandardScaler(X):
-    scaler = StandardScaler()
-    X = scaler.fit_transform(X)
-    return X
-
-def getPCA(X,my_components):
-    pca = PCA(n_components=my_components)
-    pca.fit(X)
-    X_reduction = pca.transform(X)
-    X_reduction = getStandardScaler(X_reduction)
-    return X_reduction
 
 class MyDataset(Dataset):
     def __init__(self,phase, data_path, max_smi_len):
@@ -84,11 +70,11 @@ class MyDataset(Dataset):
 
         smi = self.smi_list[idx]
         smi_padded_onehot = label_smiles(smi,self.max_smi_len)
-        smi_len_origin = len(smi_padded_onehot)
+        smi_len = self.max_smi_len
 
         return (np.array(activity_value,dtype=np.int),
                 smi_padded_onehot,
-                np.array(smi_len_origin,dtype=np.int)
+                np.array(smi_len,dtype=np.int)
                 )
 
     def __len__(self):

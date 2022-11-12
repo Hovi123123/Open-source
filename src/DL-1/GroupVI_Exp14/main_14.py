@@ -42,7 +42,6 @@ if __name__ == '__main__':
     ecfp4_len = 2048
     num_out_dim = 32
 
-    embedding_dim = 100
     batch_size = 128
     n_epoch = 20
     interrupt = None
