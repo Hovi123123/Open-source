@@ -79,7 +79,7 @@ if __name__ == '__main__':
                     for phase_name in ['training', 'validation', 'test']}
     optimizer = optim.AdamW(model.parameters(), weight_decay=1e-2)
 
-    scheduler = optim.lr_scheduler.OneCycleLR(optimizer, max_lr=4e-4, epochs=n_epoch,
+    scheduler = optim.lr_scheduler.OneCycleLR(optimizer, max_lr=5e-4, epochs=n_epoch,
                                             steps_per_epoch=len(data_loaders['training']))
 
     loss_function = nn.BCEWithLogitsLoss(reduction='sum')
